@@ -84,6 +84,17 @@ export const TwentyFour: FC = () => {
             global_answer = [];
         }
     };
+
+    const randomNums = () => {
+        let cards = randomcards();
+        while (!showPoint24(cards)) {
+            cards = randomcards();
+        }
+
+        const strcards = cards.map(v => v.toString()).reduce((p, c, i) => p + " " + c);
+        setStrCards(strcards);
+        setAnswer([]);
+    };
     return (
         <div className='container mt-1'>
             <div className="card">
@@ -100,6 +111,7 @@ export const TwentyFour: FC = () => {
                         <button className='me-2 mt-1 btn btn-sm btn-info' onClick={showTips}>查看提示</button>
                         <button className='me-2 mt-1 btn btn-sm btn-success' onClick={showAnswer}>查看答案</button>
                         <button className='me-2 btn mt-1 btn-sm btn-secondary' onClick={clearAnswer}>清空答案</button>
+                        <button className='me-2 btn mt-1 btn-sm btn-warning' onClick={randomNums}>随机生成</button>
                     </div>
                     <div className='answer'>
                         <AnswerComponent Answers={answer} />
@@ -117,6 +129,14 @@ var global_answer: Pts24Answer[] = [];
 
 function generrateHow(a: number, op: string, b: number, num: number) {
     return a.toString() + op + b.toString() + "=" + num.toString()
+}
+
+function randomcards() {
+    let cards: number[] = [];
+    for (let i = 0; i < 4; i++) {
+        cards.push(Math.floor(Math.random() * 13) + 1);
+    }
+    return cards;
 }
 
 function generatePossibleEntity(a: number, b: number) {
