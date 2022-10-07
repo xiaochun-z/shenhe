@@ -1,7 +1,11 @@
 ﻿.title {
-    color:#036;
+    color: #036;
 }
 
 .text-pink {
     color: #d63384;
+}
+
+.answer {
+    min-height: 500px;
 }

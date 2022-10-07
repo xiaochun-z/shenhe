@@ -95,7 +95,7 @@ export const TwentyFour: FC = () => {
                     <p>这个小程序可以作为24点游戏的辅助，帮助你快速了解你的牌能否达成24点。</p>
                     <label htmlFor="tfvalue" className="form-label">请输入4个数字（以空格分隔，例如：<span className="text-pink">2 4 5 10</span>），如果你输入的不是数字，不是数字的部分会被自动忽略。</label>
                     <input type="text" name="tf_zip" className="form-control mb-3" id="tfvalue" placeholder="2 4 5 10" value={strcards} onChange={onTexFieldChange} onKeyDown={onTextFieldKeydown} />
-                    <div>
+                    <div className="mb-1">
                         <button className='me-2 mt-1 btn btn-sm btn-primary' onClick={verifycards}>查看是否能够凑成24</button>
                         <button className='me-2 mt-1 btn btn-sm btn-info' onClick={showTips}>查看提示</button>
                         <button className='me-2 mt-1 btn btn-sm btn-success' onClick={showAnswer}>查看答案</button>
