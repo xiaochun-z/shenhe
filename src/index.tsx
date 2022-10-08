@@ -10,20 +10,22 @@ import {
 } from "react-router-dom";
 
 import { TwentyFour } from './Pages/TwentyFour/TwentyFour';
-import {Product } from './Pages/Product/Product';
+import { Sayhello } from './Pages/Helloworld/Sayhello';
+import { ErrorPage } from './Pages/Error/ErrorPage'
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />
+        element: <App />,
+        errorElement: <ErrorPage />
     },
     {
-        path: "/24",
+        path: "24",
         element: <TwentyFour />
     },
     {
-        path: "product",
-        element: <Product />
+        path: "sayhello",
+        element: <Sayhello />
     }
 ]);
 

@@ -1,10 +1,12 @@
 import React, { FC } from 'react';
-import 'bootstrap'
 //import { useState } from 'react';
 
-export const Product: FC = () => {
+export const Sayhello: FC = () => {
     const getProducts = async()=>{
-        const result = await fetch("api/products");
+        const result = await fetch("api/sayhello", {
+            method: "GET",
+            headers: {"name": "xiaocz"}
+          });
         //const prods = await result.json();
         //console.log(prods);
         const text = await result.text();
@@ -12,7 +14,7 @@ export const Product: FC = () => {
     };
     return (
         <>
-            <button className='btn btn-primary' onClick={getProducts}>show products</button>
+            <button className='btn btn-primary m-3' onClick={getProducts}>hello from azure function</button>
         </>
     );
 };

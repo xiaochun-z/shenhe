@@ -1,6 +1,5 @@
 import React, { FC, ChangeEvent, KeyboardEvent } from 'react';
 import './TwentyFour.css'
-import 'bootstrap'
 import { useState } from 'react';
 import logo from './tf24.jpg'
 
