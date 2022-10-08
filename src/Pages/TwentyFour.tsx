@@ -31,7 +31,7 @@ export const TwentyFour: FC = () => {
         setStrCards(e.target.value);
     };
 
-    const noanswer = [new Pts24Answer("找不到答案", 'text-danger')];
+    const noanswer = [new Pts24Answer("找不到凑成24的方法", 'text-danger')];
 
     const onTextFieldKeydown = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.altKey === false && e.key === 'Enter') {

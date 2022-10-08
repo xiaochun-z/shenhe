@@ -1,6 +1,6 @@
 {
-  "name": "shenhe.react",
-  "version": "0.1.0",
+  "name": "shenhe.org",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@popperjs/core": "^2.11.6",
