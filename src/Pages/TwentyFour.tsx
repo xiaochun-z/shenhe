@@ -47,7 +47,6 @@ export const TwentyFour: FC = () => {
 
     const verifycards = () => {
         var ncards = getcards();
-
         const canCalc = showPoint24(ncards);
         const nums: string = ncards.map((v, i) => v.toString()).reduce((v, c) => v + " " + c);
         const tip: Pts24Answer = new Pts24Answer(canCalc ? "这些数字可以凑成24" : "无法将这些数字凑成24", canCalc ? 'text-success' : 'text-danger');

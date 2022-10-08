@@ -9,7 +9,8 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
-import { TwentyFour } from './Pages/TwentyFour'
+import { TwentyFour } from './Pages/TwentyFour';
+import {Product } from './Pages/Product';
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
         path: "/24",
         element: <TwentyFour />
+    },
+    {
+        path: "product",
+        element: <Product />
     }
 ]);
 
