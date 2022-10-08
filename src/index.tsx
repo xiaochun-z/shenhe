@@ -9,8 +9,8 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
-import { TwentyFour } from './Pages/TwentyFour';
-import {Product } from './Pages/Product';
+import { TwentyFour } from './Pages/TwentyFour/TwentyFour';
+import {Product } from './Pages/Product/Product';
 
 const router = createBrowserRouter([
     {
