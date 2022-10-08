@@ -44,8 +44,8 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-react-app": "^7.0.1",
     "jest-editor-support": "^30.2.0",
-    "react-scripts": "^2.1.3"
-  }
+    "react-scripts": "^5.0.1"
+  },
+  "proxy": "http://localhost:7071"
 }
