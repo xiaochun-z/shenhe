@@ -11,7 +11,8 @@ import {
 
 import { TwentyFour } from './Pages/TwentyFour/TwentyFour';
 import { Sayhello } from './Pages/Helloworld/Sayhello';
-import { ErrorPage } from './Pages/Error/ErrorPage'
+import { ErrorPage } from './Pages/Error/ErrorPage';
+import { LoginPage } from "./Pages/Login/Login";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     {
         path: "sayhello",
         element: <Sayhello />
+    },
+    {
+        path: "login",
+        element: <LoginPage />
     }
 ]);
 

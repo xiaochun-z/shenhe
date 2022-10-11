@@ -29,3 +29,4 @@ tsconfig.json in sub-directory need an extra line:
 
 # Links
 [快速入门：在 Azure 中通过命令行创建 TypeScript 函数](https://learn.microsoft.com/zh-cn/azure/azure-functions/create-first-function-cli-typescript?tabs=azure-powershell%2Cbrowser)
+[管理 Azure Cosmos DB 中数据的 Node.js 示例](https://learn.microsoft.com/zh-cn/azure/cosmos-db/sql/sql-api-nodejs-samples)

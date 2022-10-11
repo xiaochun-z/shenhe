@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 //import { useState } from 'react';
 
 export const Sayhello: FC = () => {
-    const getProducts = async()=>{
+    const sayHello = async()=>{
         const result = await fetch("api/sayhello", {
             method: "GET",
             headers: {"name": "xiaocz"}
@@ -14,7 +14,7 @@ export const Sayhello: FC = () => {
     };
     return (
         <>
-            <button className='btn btn-primary m-3' onClick={getProducts}>hello from azure function</button>
+            <button className='btn btn-primary m-3' onClick={sayHello}>hello from azure function</button>
         </>
     );
 };
