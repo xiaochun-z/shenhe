@@ -17,6 +17,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 npm start 
 npm run build
 npm test
+
+cd api
+npm install # install azure functions if created api funcs
+
 #azure function creating
 cd api / func start
 cd api / npm start

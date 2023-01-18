@@ -1,7 +1,7 @@
 //import { setegid } from "process";
 import React, { ChangeEvent, FC, useState } from "react";
 import "./login.css";
-import LoginResponse from "../../../api/login/LoginResponse"
+//import LoginResponse from "../../../api/login/LoginResponse"
 
 export const LoginPage: FC = () => {
     const [userName, setUserName] = useState("abc");
@@ -26,8 +26,8 @@ export const LoginPage: FC = () => {
                 password: password,
             }),
         }))).json();
-        const response: LoginResponse = jsonres;
-        alert(`login ${response.Successful}`);
+        //const response: LoginResponse = jsonres;
+       // alert(`login ${response.Successful}`);
 
     };
 
