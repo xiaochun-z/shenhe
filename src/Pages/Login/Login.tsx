@@ -16,16 +16,16 @@ export const LoginPage: FC = () => {
 
     const PerformLogin = async (e: any) => {
 
-        const jsonres = await (await (fetch("api/login", {
-            method: "post",
-            headers: {
-                'content-type': 'application/json;charset=UTF-8',
-            },
-            body: JSON.stringify({
-                user: userName,
-                password: password,
-            }),
-        }))).json();
+        // const jsonres = await (await (fetch("api/login", {
+        //     method: "post",
+        //     headers: {
+        //         'content-type': 'application/json;charset=UTF-8',
+        //     },
+        //     body: JSON.stringify({
+        //         user: userName,
+        //         password: password,
+        //     }),
+        // }))).json();
         //const response: LoginResponse = jsonres;
        // alert(`login ${response.Successful}`);
 
