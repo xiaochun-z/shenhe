@@ -4,6 +4,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# build
+ install nodejs
+ install all dependencies with this command:
+ ```
+ npm install
+ ```
 
 # Useful commands notes
 ```bash

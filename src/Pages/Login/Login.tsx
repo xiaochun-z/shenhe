@@ -1,4 +1,3 @@
-import { wait } from "@testing-library/user-event/dist/utils";
 import { setegid } from "process";
 import React, { ChangeEvent, FC, useState } from "react";
 import "./login.css";
